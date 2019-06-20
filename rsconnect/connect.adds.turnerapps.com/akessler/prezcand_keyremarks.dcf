@@ -1,0 +1,13 @@
+name: prezcand_keyremarks
+title: prezcand_keyremarks
+username: akessler
+account: akessler
+server: connect.adds.turnerapps.com
+hostUrl: https://connect.adds.turnerapps.com/__api__
+appId: 71
+bundleId: 231
+url: https://connect.adds.turnerapps.com/content/71/
+when: 1561054901.4916
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: LICENSE|README.md
