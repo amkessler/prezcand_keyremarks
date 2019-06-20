@@ -69,6 +69,11 @@ keyremarks <- keyremarks %>%
   )
 
 
+#case of categories
+keyremarks$category <- str_to_title(keyremarks$category)
+keyremarks$subject_1 <- str_to_title(keyremarks$subject_1)
+
+
 #format as factors for DT use
 keyremarks$category <- as.factor(keyremarks$category)
 keyremarks$subject_1 <- as.factor(keyremarks$subject_1)
