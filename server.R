@@ -13,7 +13,7 @@ remarks_big <- keyremarks %>%
          venue,
          city,
          state,
-         subject_detailed = subject_1,
+         subjects = subject_1,
          key_sound,
          # subject_2,
          other_sound
