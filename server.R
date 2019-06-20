@@ -15,9 +15,9 @@ remarks_big <- keyremarks %>%
          state,
          subject_1,
          key_sound,
-         subject_2,
-         other_sound,
-         source_link
+         # subject_2,
+         other_sound
+         # source_link
   ) %>% 
   arrange(desc(date))
 
