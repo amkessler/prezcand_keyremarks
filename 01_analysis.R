@@ -27,10 +27,12 @@ remarks_sincemidterms <- keyremarks %>%
 remarks_sincemidterms %>% 
   filter(!is.na(category)) %>% 
   count(category) %>% 
-  arrange(desc(n))
+  arrange(desc(n)) %>% 
+  write_csv("output/total_bycategory.csv")
 
 
 remarks_sincemidterms %>% 
   filter(!is.na(category)) %>% 
   count(candidate, category) %>% 
-  arrange(candidate, desc(n))
+  arrange(candidate, desc(n)) %>% 
+  write_csv("output/bycandidate_and_bycategory.csv")
