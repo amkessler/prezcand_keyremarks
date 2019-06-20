@@ -46,10 +46,25 @@ keyremarks <- keyremarks %>%
       str_detect(subject_1, "obamacare") ~ "healthcare",
       str_detect(subject_1, "medicare") ~ "healthcare",
       str_detect(subject_1, "climate") ~ "climate",
-      str_detect(subject_1, "tuition") ~ "tuition - student debt",
-      str_detect(subject_1, "student debt") ~ "tuition - student debt",
-      str_detect(subject_1, "college affordability") ~ "tuition - student debt",
-      str_detect(subject_1, "free college") ~ "tuition - student debt"
+      str_detect(subject_1, "tuition") ~ "tuition",
+      str_detect(subject_1, "student debt") ~ "tuition",
+      str_detect(subject_1, "college affordability") ~ "tuition",
+      str_detect(subject_1, "guns") ~ "guns",
+      str_detect(subject_1, "gun ") ~ "guns",
+      str_detect(subject_1, "immigration") ~ "immigration",
+      str_detect(subject_1, "immigrant") ~ "immigration",
+      str_detect(subject_1, "migrant") ~ "immigration",
+      str_detect(subject_1, "child separation") ~ "immigration",
+      str_detect(subject_1, "border") ~ "immigration",
+      str_detect(subject_1, "criminal justice") ~ "criminal justice",
+      str_detect(subject_1, "cash bail") ~ "criminal justice",
+      str_detect(subject_1, "racial justice") ~ "criminal justice",
+      str_detect(subject_1, "economy") ~ "economy",
+      str_detect(subject_1, "economic") ~ "economy",
+      str_detect(subject_1, "minimum wage") ~ "economy",
+      str_detect(subject_1, "living wage") ~ "economy",
+      str_detect(subject_1, "wages") ~ "economy",
+      str_detect(subject_1, "income") ~ "economy"
     )
   )
 
