@@ -5,9 +5,9 @@ account: akessler
 server: connect.adds.turnerapps.com
 hostUrl: https://connect.adds.turnerapps.com/__api__
 appId: 71
-bundleId: 236
+bundleId: 237
 url: https://connect.adds.turnerapps.com/content/71/
-when: 1561060998.16359
+when: 1561062279.02573
 asMultiple: FALSE
 asStatic: FALSE
-ignoredFiles: .httr-oauth|00_gsheets_load_data.R|LICENSE|README.md
+ignoredFiles: .httr-oauth|00_gsheets_load_data.R|01_analysis.R|LICENSE|README.md

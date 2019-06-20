@@ -8,6 +8,7 @@ library(glue)
 keyremarks <- readRDS("keyremarks_forMP.rds")
 
 remarks_big <- keyremarks %>% 
+  filter(date > "2018-11-06") %>% 
   select(candidate,
          date,
          venue,
