@@ -82,6 +82,7 @@ keyremarks$venue <- as.factor(keyremarks$venue)
 keyremarks$state <- as.factor(keyremarks$state)
 
 
+
 #save to file
 saveRDS(keyremarks, "keyremarks_forMP.rds")
 write_csv(keyremarks, "keyremarks_forMP.csv")

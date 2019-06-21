@@ -21,6 +21,48 @@ remarks_sincemidterms <- keyremarks %>%
   arrange(desc(date))
 
 
+#column for just last name of candidate
+remarks_sincemidterms$candidate <- str_replace_all(remarks_sincemidterms$candidate, "Bill de Blasio", "Bill deBlasio")
+remarks_sincemidterms$lastname <- str_split(remarks_sincemidterms$candidate, " ", simplify = TRUE)[,2]
+
+remarks_sincemidterms$candidate <- remarks_sincemidterms$lastname
+remarks_sincemidterms$lastname <- NULL
+
+remarks_sincemidterms %>% 
+  count(candidate) 
+
+
+#filter to only ACTIVE CURRENT candidates
+remarks_sincemidterms <- remarks_sincemidterms %>% 
+  filter(candidate %in% c("Bennet",
+                          "Biden",
+                          "Booker",
+                          "Bullock",
+                          "Buttigieg",
+                          "Castro",
+                          "deBlasio",
+                          "Delaney",
+                          "Gabbard",
+                          "Gillibrand",
+                          "Harris",
+                          "Hickenlooper",
+                          "Inslee",
+                          "Klobuchar",
+                          "Messam",
+                          "Moulton",
+                          "O'Rourke",
+                          "Sanders",
+                          "Swalwell",
+                          "Warren",
+                          "Williamson",
+                          "Yang")
+  )
+
+
+
+
+
+
 # some aggregate counts ####
 
 remarks_sincemidterms %>% 

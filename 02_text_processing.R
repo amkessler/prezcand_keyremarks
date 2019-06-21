@@ -25,6 +25,37 @@ remarks_fortext$lastname <- str_split(remarks_fortext$candidate, " ", simplify =
 remarks_fortext$candidate <- remarks_fortext$lastname
 remarks_fortext$lastname <- NULL
 
+remarks_fortext %>% 
+  count(candidate) 
+
+
+#filter to only ACTIVE CURRENT candidates
+remarks_fortext <- remarks_fortext %>% 
+  filter(candidate %in% c("Bennet",
+                        "Biden",
+                        "Booker",
+                        "Bullock",
+                        "Buttigieg",
+                        "Castro",
+                        "deBlasio",
+                        "Delaney",
+                        "Gabbard",
+                        "Gillibrand",
+                        "Harris",
+                        "Hickenlooper",
+                        "Inslee",
+                        "Klobuchar",
+                        "Messam",
+                        "Moulton",
+                        "O'Rourke",
+                        "Sanders",
+                        "Swalwell",
+                        "Warren",
+                        "Williamson",
+                        "Yang")
+          )
+
+
 
 
 
