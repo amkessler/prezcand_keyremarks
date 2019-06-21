@@ -17,8 +17,16 @@ remarks_fortext <- keyremarks %>%
          text = key_sound
   ) 
 
-remarks_fortext %>% 
-  count(candidate)
+
+#column for just last name of candidate
+remarks_fortext$candidate <- str_replace_all(remarks_fortext$candidate, "Bill de Blasio", "Bill deBlasio")
+remarks_fortext$lastname <- str_split(remarks_fortext$candidate, " ", simplify = TRUE)[,2]
+
+remarks_fortext$candidate <- remarks_fortext$lastname
+remarks_fortext$lastname <- NULL
+
+
+
 
 # tidy texting ------------------------------------------------------------
 tidy_remarks <- remarks_fortext %>%
