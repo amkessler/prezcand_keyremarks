@@ -21,7 +21,6 @@ remarks_sincemidterms <- keyremarks %>%
   arrange(desc(date))
 
 
-
 # some aggregate counts ####
 
 remarks_sincemidterms %>% 
