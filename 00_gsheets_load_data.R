@@ -4,7 +4,7 @@ library(janitor)
 library(googlesheets)
 
 #this will trigger a web page to authenticate with google account
-# gs_ls() 
+# gs_ls()
 
 
 #register DW's 2020 google sheet
@@ -45,7 +45,6 @@ keyremarks <- keyremarks %>%
       str_detect(subcategories, "healthcare") ~ "healthcare",
       str_detect(subcategories, "obamacare") ~ "healthcare",
       str_detect(subcategories, "medicare") ~ "healthcare",
-      str_detect(subcategories, "climate") ~ "climate",
       str_detect(subcategories, "tuition") ~ "tuition",
       str_detect(subcategories, "student debt") ~ "tuition",
       str_detect(subcategories, "college affordability") ~ "tuition",
@@ -64,7 +63,8 @@ keyremarks <- keyremarks %>%
       str_detect(subcategories, "minimum wage") ~ "economy",
       str_detect(subcategories, "living wage") ~ "economy",
       str_detect(subcategories, "wages") ~ "economy",
-      str_detect(subcategories, "income") ~ "economy"
+      str_detect(subcategories, "income") ~ "economy",
+      str_detect(subcategories, "climate") ~ "climate"
     )
   )
 
