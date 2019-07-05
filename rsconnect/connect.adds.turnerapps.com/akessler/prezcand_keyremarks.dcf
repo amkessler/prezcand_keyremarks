@@ -5,9 +5,9 @@ account: akessler
 server: connect.adds.turnerapps.com
 hostUrl: https://connect.adds.turnerapps.com/__api__
 appId: 71
-bundleId: 238
+bundleId: 246
 url: https://connect.adds.turnerapps.com/content/71/
-when: 1561136576.82437
+when: 1562359583.19728
 asMultiple: FALSE
 asStatic: FALSE
-ignoredFiles: .httr-oauth|00_gsheets_load_data.R|01_analysis.R|LICENSE|README.md|output/bycandidate_and_bycategory.csv|output/total_bycategory.csv
+ignoredFiles: .httr-oauth|00_gsheets_load_data.R|01_analysis.R|02_text_processing.R|keyremarks_forMP.csv|LICENSE|README.md|output/bycandidate_and_bycategory.csv|output/topwords_bycand.xlsx|output/total_bycategory.csv
