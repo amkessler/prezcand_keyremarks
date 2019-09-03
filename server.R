@@ -66,23 +66,29 @@ keyremarks$subcategories <- as.factor(keyremarks$subcategories)
 keyremarks$candidate <- as.factor(keyremarks$candidate)
 keyremarks$venue <- as.factor(keyremarks$venue)
 keyremarks$state <- as.factor(keyremarks$state)
-
+keyremarks$city <- as.factor(keyremarks$city)
+keyremarks$subject_2 <- as.factor(keyremarks$subject_2)
 
 # Select fields to display
+
+names(keyremarks)
 
 remarks_big <- keyremarks %>% 
   filter(date > "2018-11-06") %>% 
   select(candidate,
          date,
-         venue,
          city,
          state,
+         venue,
          category,
-         subcategories = subject_1,
+         subcategories,
+         tc_in,
          key_sound,
-         # subject_2,
-         other_sound
-         # source_link
+         tc_in_2,
+         other_sound,
+         other_sound_subcategories = subject_2,
+         ms_number,
+         on_cam
   ) %>% 
   arrange(desc(date))
 
